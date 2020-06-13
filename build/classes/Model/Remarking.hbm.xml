@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 13, 2020 12:13:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Remarking" table="remarking" catalog="qlsinhvien" optimistic-lock="version">
+        <composite-id name="id" class="Model.RemarkingId">
+            <key-property name="no" type="int">
+                <column name="No" />
+            </key-property>
+            <key-property name="remarkId" type="string">
+                <column name="remarkID" length="65535" />
+            </key-property>
+            <key-property name="studentId" type="string">
+                <column name="StudentID" length="65535" />
+            </key-property>
+            <key-property name="fullname" type="string">
+                <column name="Fullname" length="65535" />
+            </key-property>
+            <key-property name="subject" type="string">
+                <column name="Subject" length="65535" />
+            </key-property>
+            <key-property name="colExam" type="string">
+                <column name="ColExam" length="65535" />
+            </key-property>
+            <key-property name="mark" type="java.lang.Float">
+                <column name="Mark" precision="12" scale="0" />
+            </key-property>
+            <key-property name="reason" type="string">
+                <column name="Reason" length="65535" />
+            </key-property>
+            <key-property name="status" type="string">
+                <column name="Status" length="65535" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

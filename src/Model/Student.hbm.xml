@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 13, 2020 12:13:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Student" table="student" catalog="qlsinhvien" optimistic-lock="version">
+        <composite-id name="id" class="Model.StudentId">
+            <key-property name="no" type="int">
+                <column name="No" />
+            </key-property>
+            <key-property name="studentId" type="string">
+                <column name="StudentID" />
+            </key-property>
+            <key-property name="fullname" type="string">
+                <column name="Fullname" length="16777215" />
+            </key-property>
+            <key-property name="gender" type="string">
+                <column name="Gender" length="65535" />
+            </key-property>
+            <key-property name="idcard" type="string">
+                <column name="IDCard" length="65535" />
+            </key-property>
+            <key-property name="classes" type="string">
+                <column name="Classes" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

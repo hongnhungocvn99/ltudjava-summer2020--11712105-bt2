@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 13, 2020 12:13:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Subject" table="subject" catalog="qlsinhvien" optimistic-lock="version">
+        <composite-id name="id" class="Model.SubjectId">
+            <key-property name="no" type="int">
+                <column name="No" />
+            </key-property>
+            <key-property name="subjectId" type="string">
+                <column name="SubjectID" length="65535" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="Name" length="16777215" />
+            </key-property>
+            <key-property name="room" type="string">
+                <column name="Room" length="65535" />
+            </key-property>
+            <key-property name="classId" type="string">
+                <column name="ClassID" length="65535" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

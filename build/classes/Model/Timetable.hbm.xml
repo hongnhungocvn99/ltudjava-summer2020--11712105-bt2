@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 13, 2020 12:13:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Timetable" table="timetable" catalog="qlsinhvien" optimistic-lock="version">
+        <composite-id name="id" class="Model.TimetableId">
+            <key-property name="no" type="int">
+                <column name="No" />
+            </key-property>
+            <key-property name="subjectId" type="java.lang.Integer">
+                <column name="SubjectID" />
+            </key-property>
+            <key-property name="subjectName" type="string">
+                <column name="SubjectName" length="16777215" />
+            </key-property>
+            <key-property name="room" type="java.lang.Integer">
+                <column name="Room" />
+            </key-property>
+            <key-property name="classId" type="java.lang.Integer">
+                <column name="ClassID" />
+            </key-property>
+            <key-property name="studentId" type="java.lang.Integer">
+                <column name="StudentID" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
