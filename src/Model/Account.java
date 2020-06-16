@@ -1,5 +1,5 @@
 package Model;
-// Generated Jun 13, 2020 12:13:38 AM by Hibernate Tools 4.3.1
+// Generated Jun 15, 2020 12:25:44 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,7 +9,7 @@ package Model;
 public class Account  implements java.io.Serializable {
 
 
-     private int no;
+     private Integer no;
      private String username;
      private String password;
      private Integer permit;
@@ -18,21 +18,20 @@ public class Account  implements java.io.Serializable {
     }
 
 	
-    public Account(int no) {
-        this.no = no;
+    public Account(String username) {
+        this.username = username;
     }
-    public Account(int no, String username, String password, Integer permit) {
-       this.no = no;
+    public Account(String username, String password, Integer permit) {
        this.username = username;
        this.password = password;
        this.permit = permit;
     }
    
-    public int getNo() {
+    public Integer getNo() {
         return this.no;
     }
     
-    public void setNo(int no) {
+    public void setNo(Integer no) {
         this.no = no;
     }
     public String getUsername() {

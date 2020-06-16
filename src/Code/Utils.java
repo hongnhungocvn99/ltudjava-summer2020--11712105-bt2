@@ -16,8 +16,7 @@ import java.util.List;
  * @author coluc
  */
 public class Utils {
-
-    public Utils() {
+     public Utils() {
 
     }
     public static final String COMMA_DELIMITER = ",";

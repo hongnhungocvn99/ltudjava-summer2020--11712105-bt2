@@ -1,34 +1,33 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Jun 13, 2020 12:13:39 AM by Hibernate Tools 4.3.1 -->
+<!-- Generated Jun 15, 2020 12:25:45 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="Model.Score" table="score" catalog="qlsinhvien" optimistic-lock="version">
-        <composite-id name="id" class="Model.ScoreId">
-            <key-property name="no" type="int">
-                <column name="No" />
-            </key-property>
-            <key-property name="studentId" type="string">
-                <column name="StudentID" length="65535" />
-            </key-property>
-            <key-property name="fullname" type="string">
-                <column name="Fullname" length="16777215" />
-            </key-property>
-            <key-property name="middleExam" type="string">
-                <column name="MiddleExam" length="65535" />
-            </key-property>
-            <key-property name="finalExam" type="java.lang.Float">
-                <column name="FinalExam" precision="12" scale="0" />
-            </key-property>
-            <key-property name="plusExam" type="java.lang.Float">
-                <column name="PlusExam" precision="12" scale="0" />
-            </key-property>
-            <key-property name="avgScore" type="java.lang.Float">
-                <column name="AvgScore" precision="12" scale="0" />
-            </key-property>
-            <key-property name="subjectId" type="string">
-                <column name="SubjectID" length="65535" />
-            </key-property>
-        </composite-id>
+        <id name="no" type="java.lang.Integer">
+            <column name="No" />
+            <generator class="identity" />
+        </id>
+        <property name="studentId" type="string">
+            <column name="StudentID" length="65535" />
+        </property>
+        <property name="fullname" type="string">
+            <column name="Fullname" length="16777215" />
+        </property>
+        <property name="middleExam" type="string">
+            <column name="MiddleExam" length="65535" />
+        </property>
+        <property name="finalExam" type="java.lang.Float">
+            <column name="FinalExam" precision="12" scale="0" />
+        </property>
+        <property name="plusExam" type="java.lang.Float">
+            <column name="PlusExam" precision="12" scale="0" />
+        </property>
+        <property name="avgScore" type="java.lang.Float">
+            <column name="AvgScore" precision="12" scale="0" />
+        </property>
+        <property name="subjectId" type="string">
+            <column name="SubjectID" length="65535" />
+        </property>
     </class>
 </hibernate-mapping>

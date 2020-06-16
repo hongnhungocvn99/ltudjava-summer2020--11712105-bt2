@@ -1,5 +1,5 @@
 package Model;
-// Generated Jun 13, 2020 12:13:38 AM by Hibernate Tools 4.3.1
+// Generated Jun 15, 2020 12:25:44 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,21 +9,65 @@ package Model;
 public class Timetable  implements java.io.Serializable {
 
 
-     private TimetableId id;
+     private Integer no;
+     private Integer subjectId;
+     private String subjectName;
+     private Integer room;
+     private Integer classId;
+     private Integer studentId;
 
     public Timetable() {
     }
 
-    public Timetable(TimetableId id) {
-       this.id = id;
+    public Timetable(Integer subjectId, String subjectName, Integer room, Integer classId, Integer studentId) {
+       this.subjectId = subjectId;
+       this.subjectName = subjectName;
+       this.room = room;
+       this.classId = classId;
+       this.studentId = studentId;
     }
    
-    public TimetableId getId() {
-        return this.id;
+    public Integer getNo() {
+        return this.no;
     }
     
-    public void setId(TimetableId id) {
-        this.id = id;
+    public void setNo(Integer no) {
+        this.no = no;
+    }
+    public Integer getSubjectId() {
+        return this.subjectId;
+    }
+    
+    public void setSubjectId(Integer subjectId) {
+        this.subjectId = subjectId;
+    }
+    public String getSubjectName() {
+        return this.subjectName;
+    }
+    
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
+    }
+    public Integer getRoom() {
+        return this.room;
+    }
+    
+    public void setRoom(Integer room) {
+        this.room = room;
+    }
+    public Integer getClassId() {
+        return this.classId;
+    }
+    
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
+    public Integer getStudentId() {
+        return this.studentId;
+    }
+    
+    public void setStudentId(Integer studentId) {
+        this.studentId = studentId;
     }
 
 

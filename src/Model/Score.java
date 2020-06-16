@@ -1,5 +1,5 @@
 package Model;
-// Generated Jun 13, 2020 12:13:38 AM by Hibernate Tools 4.3.1
+// Generated Jun 15, 2020 12:25:44 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,21 +9,83 @@ package Model;
 public class Score  implements java.io.Serializable {
 
 
-     private ScoreId id;
+     private Integer no;
+     private String studentId;
+     private String fullname;
+     private String middleExam;
+     private Float finalExam;
+     private Float plusExam;
+     private Float avgScore;
+     private String subjectId;
 
     public Score() {
     }
 
-    public Score(ScoreId id) {
-       this.id = id;
+    public Score(String studentId, String fullname, String middleExam, Float finalExam, Float plusExam, Float avgScore, String subjectId) {
+       this.studentId = studentId;
+       this.fullname = fullname;
+       this.middleExam = middleExam;
+       this.finalExam = finalExam;
+       this.plusExam = plusExam;
+       this.avgScore = avgScore;
+       this.subjectId = subjectId;
     }
    
-    public ScoreId getId() {
-        return this.id;
+    public Integer getNo() {
+        return this.no;
     }
     
-    public void setId(ScoreId id) {
-        this.id = id;
+    public void setNo(Integer no) {
+        this.no = no;
+    }
+    public String getStudentId() {
+        return this.studentId;
+    }
+    
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+    public String getFullname() {
+        return this.fullname;
+    }
+    
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+    public String getMiddleExam() {
+        return this.middleExam;
+    }
+    
+    public void setMiddleExam(String middleExam) {
+        this.middleExam = middleExam;
+    }
+    public Float getFinalExam() {
+        return this.finalExam;
+    }
+    
+    public void setFinalExam(Float finalExam) {
+        this.finalExam = finalExam;
+    }
+    public Float getPlusExam() {
+        return this.plusExam;
+    }
+    
+    public void setPlusExam(Float plusExam) {
+        this.plusExam = plusExam;
+    }
+    public Float getAvgScore() {
+        return this.avgScore;
+    }
+    
+    public void setAvgScore(Float avgScore) {
+        this.avgScore = avgScore;
+    }
+    public String getSubjectId() {
+        return this.subjectId;
+    }
+    
+    public void setSubjectId(String subjectId) {
+        this.subjectId = subjectId;
     }
 
 

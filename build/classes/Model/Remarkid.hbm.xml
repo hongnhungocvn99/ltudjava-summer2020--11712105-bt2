@@ -1,22 +1,21 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Jun 13, 2020 12:13:39 AM by Hibernate Tools 4.3.1 -->
+<!-- Generated Jun 15, 2020 12:25:45 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="Model.Remarkid" table="remarkid" catalog="qlsinhvien" optimistic-lock="version">
-        <composite-id name="id" class="Model.RemarkidId">
-            <key-property name="no" type="int">
-                <column name="No" />
-            </key-property>
-            <key-property name="name" type="string">
-                <column name="Name" length="65535" />
-            </key-property>
-            <key-property name="dateFrom" type="timestamp">
-                <column name="DateFrom" length="19" />
-            </key-property>
-            <key-property name="dateTo" type="timestamp">
-                <column name="DateTo" length="19" />
-            </key-property>
-        </composite-id>
+        <id name="no" type="java.lang.Integer">
+            <column name="No" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="65535" />
+        </property>
+        <property name="dateFrom" type="timestamp">
+            <column name="DateFrom" length="19" />
+        </property>
+        <property name="dateTo" type="timestamp">
+            <column name="DateTo" length="19" />
+        </property>
     </class>
 </hibernate-mapping>

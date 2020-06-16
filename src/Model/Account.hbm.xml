@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Jun 13, 2020 12:13:39 AM by Hibernate Tools 4.3.1 -->
+<!-- Generated Jun 15, 2020 12:25:45 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="Model.Account" table="account" catalog="qlsinhvien" optimistic-lock="version">
-        <id name="no" type="int">
+        <id name="no" type="java.lang.Integer">
             <column name="No" />
-            <generator class="assigned" />
+            <generator class="identity" />
         </id>
         <property name="username" type="string">
-            <column name="Username" length="65535" />
+            <column name="Username" length="65535" not-null="true" />
         </property>
         <property name="password" type="string">
             <column name="Password" length="65535" />

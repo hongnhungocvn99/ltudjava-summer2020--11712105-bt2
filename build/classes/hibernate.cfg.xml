@@ -46,6 +46,8 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/qlsinhvien?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">123456</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory</property>
     <mapping resource="Model/Student.hbm.xml"/>
     <mapping resource="Model/Remarking.hbm.xml"/>
     <mapping resource="Model/Account.hbm.xml"/>
@@ -54,5 +56,6 @@ Contributor(s):
     <mapping resource="Model/Subject.hbm.xml"/>
     <mapping resource="Model/Timetable.hbm.xml"/>
     <mapping resource="Model/Score.hbm.xml"/>
+    
   </session-factory>
 </hibernate-configuration>

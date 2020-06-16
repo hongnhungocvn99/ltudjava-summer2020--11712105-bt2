@@ -1,5 +1,5 @@
 package Model;
-// Generated Jun 13, 2020 12:13:38 AM by Hibernate Tools 4.3.1
+// Generated Jun 15, 2020 12:25:44 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,21 +9,60 @@ package Model;
 public class Subject  implements java.io.Serializable {
 
 
-     private SubjectId id;
+     private Integer no;
+     private String subjectId;
+     private String name;
+     private String room;
+     private String classId;
 
     public Subject() {
     }
 
-    public Subject(SubjectId id) {
-       this.id = id;
+	
+    public Subject(String subjectId) {
+        this.subjectId = subjectId;
+    }
+    public Subject(String subjectId, String name, String room, String classId) {
+       this.subjectId = subjectId;
+       this.name = name;
+       this.room = room;
+       this.classId = classId;
     }
    
-    public SubjectId getId() {
-        return this.id;
+    public Integer getNo() {
+        return this.no;
     }
     
-    public void setId(SubjectId id) {
-        this.id = id;
+    public void setNo(Integer no) {
+        this.no = no;
+    }
+    public String getSubjectId() {
+        return this.subjectId;
+    }
+    
+    public void setSubjectId(String subjectId) {
+        this.subjectId = subjectId;
+    }
+    public String getName() {
+        return this.name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getRoom() {
+        return this.room;
+    }
+    
+    public void setRoom(String room) {
+        this.room = room;
+    }
+    public String getClassId() {
+        return this.classId;
+    }
+    
+    public void setClassId(String classId) {
+        this.classId = classId;
     }
 
 

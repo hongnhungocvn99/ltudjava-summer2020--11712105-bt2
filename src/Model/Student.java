@@ -1,5 +1,5 @@
 package Model;
-// Generated Jun 13, 2020 12:13:38 AM by Hibernate Tools 4.3.1
+// Generated Jun 15, 2020 12:25:44 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,21 +9,69 @@ package Model;
 public class Student  implements java.io.Serializable {
 
 
-     private StudentId id;
+     private Integer no;
+     private String studentId;
+     private String fullname;
+     private String gender;
+     private String idcard;
+     private String classes;
 
     public Student() {
     }
 
-    public Student(StudentId id) {
-       this.id = id;
+	
+    public Student(String studentId) {
+        this.studentId = studentId;
+    }
+    public Student(String studentId, String fullname, String gender, String idcard, String classes) {
+       this.studentId = studentId;
+       this.fullname = fullname;
+       this.gender = gender;
+       this.idcard = idcard;
+       this.classes = classes;
     }
    
-    public StudentId getId() {
-        return this.id;
+    public Integer getNo() {
+        return this.no;
     }
     
-    public void setId(StudentId id) {
-        this.id = id;
+    public void setNo(Integer no) {
+        this.no = no;
+    }
+    public String getStudentId() {
+        return this.studentId;
+    }
+    
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+    public String getFullname() {
+        return this.fullname;
+    }
+    
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+    public String getGender() {
+        return this.gender;
+    }
+    
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+    public String getIdcard() {
+        return this.idcard;
+    }
+    
+    public void setIdcard(String idcard) {
+        this.idcard = idcard;
+    }
+    public String getClasses() {
+        return this.classes;
+    }
+    
+    public void setClasses(String classes) {
+        this.classes = classes;
     }
 
 

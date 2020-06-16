@@ -41,4 +41,12 @@ Contributor(s):
 -->
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="qlsinhvien"/>
+  <table-filter match-name="classes"/>
+  <table-filter match-name="student"/>
+  <table-filter match-name="remarkid"/>
+  <table-filter match-name="account"/>
+  <table-filter match-name="remarking"/>
+  <table-filter match-name="score"/>
+  <table-filter match-name="subject"/>
+  <table-filter match-name="timetable"/>
 </hibernate-reverse-engineering>
