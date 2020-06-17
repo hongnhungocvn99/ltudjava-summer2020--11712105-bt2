@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author sieus
+ * @author coluc
  */
 public class FormAddStudent extends javax.swing.JInternalFrame {
 
