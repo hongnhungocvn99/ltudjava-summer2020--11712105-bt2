@@ -147,11 +147,21 @@ public class StudentPermittion extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowOpened
 
     private void menuItemScoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemScoreActionPerformed
-      
+        frmDesktop.removeAll();
+        FormStudentScore frm = new FormStudentScore();
+        int frmWidth = this.getWidth();
+        int frmHeight = this.getHeight();
+        frm.setSize(frmWidth, frmHeight);
+        frmDesktop.add(frm);
+        frm.setVisible(true);      
     }//GEN-LAST:event_menuItemScoreActionPerformed
 
     private void menuItemPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemPasswordActionPerformed
-    
+       // TODO add your handling code here:
+        this.setVisible(false);
+        java.awt.EventQueue.invokeLater(() -> {
+            new ChangePassword().setVisible(true);
+        });    
     }//GEN-LAST:event_menuItemPasswordActionPerformed
 
     private void menuItemRemarkingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemRemarkingActionPerformed
