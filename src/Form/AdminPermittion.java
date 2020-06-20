@@ -369,14 +369,7 @@ public class AdminPermittion extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void menuTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuTimeActionPerformed
-        // TODO add your handling code here:
-     /*   frmDesktop.removeAll();
-        FormTimetable frm = new FormTimetable();
-        int frmWidth = this.getWidth();
-        int frmHeight = this.getHeight();
-        frm.setSize(frmWidth, frmHeight);
-        frmDesktop.add(frm);
-        frm.setVisible(true);*/
+    
     }//GEN-LAST:event_menuTimeActionPerformed
 
     private void menuImportScoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuImportScoreActionPerformed
@@ -424,30 +417,14 @@ public class AdminPermittion extends javax.swing.JFrame {
     }//GEN-LAST:event_menuAddSubjectStudentActionPerformed
 
     private void menuItemCreateReexamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemCreateReexamActionPerformed
-        // TODO add your handling code here:
-       /* frmDesktop.removeAll();
-        FormCreateRemarking frm  = new FormCreateRemarking();
-        int frmWidth = this.getWidth();
-        int frmHeight = this.getHeight();
-        frm.setSize(frmWidth, frmHeight);
-        frmDesktop.add(frm);
-        frm.setVisible(true);*/
+    
     }//GEN-LAST:event_menuItemCreateReexamActionPerformed
 
     private void menuItemReexamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemReexamActionPerformed
-        // TODO add your handling code here:
-     /*   frmDesktop.removeAll();
-        FormListRemarking frm = new FormListRemarking();
-        int frmWidth = this.getWidth();
-        int frmHeight = this.getHeight();
-        frm.setSize(frmWidth, frmHeight);
-        frmDesktop.add(frm);
-        frm.setVisible(true);*/
+     
     }//GEN-LAST:event_menuItemReexamActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
