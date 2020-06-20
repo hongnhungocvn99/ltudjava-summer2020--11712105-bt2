@@ -165,7 +165,13 @@ public class StudentPermittion extends javax.swing.JFrame {
     }//GEN-LAST:event_menuItemPasswordActionPerformed
 
     private void menuItemRemarkingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemRemarkingActionPerformed
-     
+        frmDesktop.removeAll();
+        FormRemarking frm = new FormRemarking();
+        int frmWidth = this.getWidth();
+        int frmHeight = this.getHeight();
+        frm.setSize(frmWidth, frmHeight);
+        frmDesktop.add(frm);
+        frm.setVisible(true);     
     }//GEN-LAST:event_menuItemRemarkingActionPerformed
     public static FormStudent _frmStudent = new FormStudent();
     public static FormScore _frmScore = new FormScore();

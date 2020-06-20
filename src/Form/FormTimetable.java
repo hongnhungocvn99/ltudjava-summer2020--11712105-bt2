@@ -13,7 +13,7 @@ import javax.swing.table.TableModel;
 
 /**
  *
- * @author sieus
+ * @author coluc
  */
 public class FormTimetable extends javax.swing.JInternalFrame {
 

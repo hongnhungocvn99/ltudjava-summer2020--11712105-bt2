@@ -15,7 +15,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author sieus
+ * @author coluc
  * @param <T>
  */
 abstract public class AbstractDAO<T> {

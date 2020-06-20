@@ -19,7 +19,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author sieus
+ * @author coluc
  */
 
 
