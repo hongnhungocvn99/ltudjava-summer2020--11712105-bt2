@@ -417,7 +417,14 @@ public class AdminPermittion extends javax.swing.JFrame {
     }//GEN-LAST:event_menuAddSubjectStudentActionPerformed
 
     private void menuItemCreateReexamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemCreateReexamActionPerformed
-    
+   // TODO add your handling code here:
+        frmDesktop.removeAll();
+        FormCreateRemarking frm = new FormCreateRemarking();
+        int frmWidth = this.getWidth();
+        int frmHeight = this.getHeight();
+        frm.setSize(frmWidth, frmHeight);
+        frmDesktop.add(frm);
+        frm.setVisible(true);    
     }//GEN-LAST:event_menuItemCreateReexamActionPerformed
 
     private void menuItemReexamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemReexamActionPerformed
