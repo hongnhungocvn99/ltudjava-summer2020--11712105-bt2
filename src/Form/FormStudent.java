@@ -11,6 +11,10 @@ import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
+/**
+ *
+ * @author coluc
+ */
 
 public class FormStudent extends javax.swing.JInternalFrame {
 

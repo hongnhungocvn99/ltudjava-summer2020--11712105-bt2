@@ -14,8 +14,8 @@
         <property name="fullname" type="string">
             <column name="Fullname" length="16777215" />
         </property>
-        <property name="middleExam" type="string">
-            <column name="MiddleExam" length="65535" />
+        <property name="middleExam" type="java.lang.Float">
+            <column name="MiddleExam" precision="12" scale="0" />
         </property>
         <property name="finalExam" type="java.lang.Float">
             <column name="FinalExam" precision="12" scale="0" />
