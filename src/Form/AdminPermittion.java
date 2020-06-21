@@ -292,13 +292,13 @@ public class AdminPermittion extends javax.swing.JFrame {
        
         
           
-    /*   frmDesktop.removeAll();
+       frmDesktop.removeAll();
         FormClasses frm = new FormClasses();
         int frmWidth = this.getWidth();
         int frmHeight = this.getHeight();
         frm.setSize(frmWidth, frmHeight);
         frmDesktop.add(frm);
-        frm.setVisible(true);*/
+        frm.setVisible(true);
     }//GEN-LAST:event_menuItemTimetableActionPerformed
 
     private void menuItemPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemPasswordActionPerformed

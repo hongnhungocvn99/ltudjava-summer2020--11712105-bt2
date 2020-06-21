@@ -1,3 +1,9 @@
+/* Lớp này là lớp Tài khoản và phân quyền đăng nhập 
+   
+   Tài khoản giáo vụ mặc định trong cơ sở dữ liệu của mình là: 
+  
+
+*/
 
 package DAO;
 
@@ -40,7 +46,7 @@ public abstract class AccountDAO extends AbstractDAO<Account> {
         result = stream.collect(Collectors.toList());
         return result;
     }
-	//# Add role
+	
     public Boolean hasRole(String username, String password, String permit) {
         List<Account> list = filter(permit);
         for (int i = 0; i < list.size(); i++) {
@@ -54,7 +60,7 @@ public abstract class AccountDAO extends AbstractDAO<Account> {
 
         return false;
     }
-	//# update
+
     public Boolean update(Account item){
         if (item == null) {
             return false;
@@ -66,7 +72,7 @@ public abstract class AccountDAO extends AbstractDAO<Account> {
             session.update(item);
             transaction.commit();
         } catch (HibernateException ex) {
-//Log the exception
+
             transaction.rollback();
             System.err.println(ex);
             session.close();

@@ -1,10 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+   - Lớp này là lớp dùng chung hỗ trợ các lớp khác để sử dụng lệnh truy vấn hql lấy dữ liệu từ cơ sở dữ liệu 
+*/
 package DAO;
-
 import Code.NewHibernateUtil;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,13 +25,14 @@ abstract public class AbstractDAO<T> {
             Query query = session.createQuery(hql);
             ds = query.list();
         } catch (HibernateException ex) {
-            //Log the exception
+           
             System.err.println(ex);
         } finally {
             session.close();
         }
         return ds;
     }
+    
 
     public Boolean add(T item) {
         if (item == null) {
@@ -47,7 +45,7 @@ abstract public class AbstractDAO<T> {
             session.save(item);
             transaction.commit();
         } catch (HibernateException ex) {
-//Log the exception
+
             transaction.rollback();
             System.err.println(ex);
             session.close();
@@ -57,6 +55,7 @@ abstract public class AbstractDAO<T> {
         return true;
     }
 
+    
     public Boolean remove(T item) {
         if (item == null) {
             return false;
@@ -68,7 +67,7 @@ abstract public class AbstractDAO<T> {
             session.delete(item);
             transaction.commit();
         } catch (HibernateException ex) {
-//Log the exception
+
             transaction.rollback();
             System.err.println(ex);
             session.close();

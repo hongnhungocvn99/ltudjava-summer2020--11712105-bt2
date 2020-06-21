@@ -76,7 +76,7 @@ public class SubjectDAO extends AbstractDAO<Subject>{
 
     @Override
     public List<Subject> filter(String filter) {
-      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
         List<Subject> list = super.getAll("Subject");
         List<Subject> result = new ArrayList();
         Stream<Subject> stream = list.stream().filter((Subject item) -> {
@@ -96,9 +96,7 @@ public class SubjectDAO extends AbstractDAO<Subject>{
         List<Subject> list = super.getAll("Subject");
         Collections.sort(list, new SortByName());
         Set<String> set = new HashSet<>();
-//        for (int i = 0; i < list.size(); i++) {
-//            set.add(list.get(i).getSubjectId());
-//        }
+
         return new ArrayList<>(set);
     }
 

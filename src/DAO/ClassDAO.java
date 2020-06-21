@@ -88,13 +88,7 @@ public class ClassDAO extends AbstractDAO<Classes>{
     }
     
     
-    public void CreatClassFromStudentSubject()
-    {
-       
-          
-               
-                  
-     }
+  
     
     @Override
     public List<Classes> filter(String filter) {
