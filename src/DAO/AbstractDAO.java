@@ -77,7 +77,8 @@ abstract public class AbstractDAO<T> {
         session.close();
         return true;
     }
-
+    
+ 
     public abstract Boolean importFromFile(String filename);
     public abstract List<T> filter(String filter);
 }

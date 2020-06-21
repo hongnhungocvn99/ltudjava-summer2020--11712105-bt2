@@ -5,6 +5,7 @@
  */
 package DAO;
 
+
 import Code.CSVReader;
 import Model.Student;
 import java.io.BufferedReader;
@@ -56,6 +57,7 @@ public class StudentDAO extends AbstractDAO<Student> {
         } catch (IOException e) {
             return false;
         }
+        
          for (int i = 0; i < records.size(); i++) {
             List<String> metaData = records.get(i);
             String studentID = metaData.get(1);
@@ -63,8 +65,10 @@ public class StudentDAO extends AbstractDAO<Student> {
             String gender = metaData.get(3);
             String idCard = metaData.get(4);
             Student item = new Student(studentID, fullName, gender, idCard, className);
+            
             super.add(item);
         }
+         
 
         return true;
               

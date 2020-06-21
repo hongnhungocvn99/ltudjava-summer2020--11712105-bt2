@@ -5,10 +5,14 @@
  */
 package Form;
 
+import DAO.ClassDAO;
 import DAO.SubjectDAO;
 import DAO.ScoreDAO;
 import DAO.StudentDAO;
+import Model.Student;
+import Model.Subject;
 import java.io.File;
+import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileSystemView;
@@ -282,13 +286,19 @@ public class AdminPermittion extends javax.swing.JFrame {
 
     private void menuItemTimetableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemTimetableActionPerformed
         // TODO add your handling code here:
-        frmDesktop.removeAll();
+    
+        ClassDAO dao = new ClassDAO();
+        Boolean check = dao.importFromFile("");
+       
+        
+          
+    /*   frmDesktop.removeAll();
         FormClasses frm = new FormClasses();
         int frmWidth = this.getWidth();
         int frmHeight = this.getHeight();
         frm.setSize(frmWidth, frmHeight);
         frmDesktop.add(frm);
-        frm.setVisible(true);
+        frm.setVisible(true);*/
     }//GEN-LAST:event_menuItemTimetableActionPerformed
 
     private void menuItemPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemPasswordActionPerformed
@@ -354,6 +364,7 @@ public class AdminPermittion extends javax.swing.JFrame {
             Boolean isUpdate = dao.importFromFile(filePath);
             if (isUpdate) {
                 JOptionPane.showMessageDialog(null, "Thành công", "Thêm thời khóa biểu thành công !", JOptionPane.INFORMATION_MESSAGE);
+             
             } else {
                 JOptionPane.showMessageDialog(null, "Thất bại", "Thêm thời khóa biểu thất bại !", JOptionPane.INFORMATION_MESSAGE);
             }
@@ -479,8 +490,11 @@ public class AdminPermittion extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+       
+        
         java.awt.EventQueue.invokeLater(() -> {
             new AdminPermittion().setVisible(true);
+             
         });
     }
 

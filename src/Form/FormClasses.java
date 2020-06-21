@@ -81,6 +81,11 @@ public class FormClasses extends javax.swing.JInternalFrame {
                 cmbClassItemStateChanged(evt);
             }
         });
+        cmbClass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbClassActionPerformed(evt);
+            }
+        });
 
         btnDelete.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnDelete.setText("Xóa sinh viên");
@@ -203,6 +208,10 @@ public class FormClasses extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(null, "Cập nhật thất bại", "Lỗi khi cập nhật sơ sở dữ liệu", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
+
+    private void cmbClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbClassActionPerformed
 
     public void updateCmb() {
         ClassDAO dao = new ClassDAO();

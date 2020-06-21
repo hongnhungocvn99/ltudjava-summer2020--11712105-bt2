@@ -77,6 +77,11 @@ public class FormTimetable extends javax.swing.JInternalFrame {
                 cmbClassItemStateChanged(evt);
             }
         });
+        cmbClass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbClassActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Lớp học");
@@ -161,6 +166,10 @@ public class FormTimetable extends javax.swing.JInternalFrame {
             LoadData();
         }
     }//GEN-LAST:event_cmbClassItemStateChanged
+
+    private void cmbClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbClassActionPerformed
     public void updateCmb() {
         SubjectDAO dao = new SubjectDAO();
         List<String> classes = dao.getClasses();

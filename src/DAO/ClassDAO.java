@@ -8,6 +8,9 @@ package DAO;
 
 import Code.CSVReader;
 import Model.Classes;
+import Model.Student;
+import Model.Subject;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -47,36 +50,54 @@ public class ClassDAO extends AbstractDAO<Classes>{
     
     @Override
     public Boolean importFromFile(String filename) {
-       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-       List<List<String>> records = new ArrayList<>();
-        String className = "";
-        try {
-            BufferedReader br = new BufferedReader(
-                    new InputStreamReader(
-                            new FileInputStream(filename), "UTF8"));
-            className = br.readLine().replace(",", "").replaceAll("[^\\x00-\\x7F]", "");
-            String header = br.readLine();
-            records = CSVReader.readToBuffer(br);
-        } catch (IOException e) {
-            return false;
-        }
-        for (int i = 0; i < records.size(); i++) {
-            List<String> metaData = records.get(i);
-            String studentID = metaData.get(1);
-            String fullName = metaData.get(2);
-            String gender = metaData.get(3);
-            String idCard = metaData.get(4);
-            Classes item = new Classes(studentID, fullName, gender, idCard, className);
-            super.add(item);
-        }
-
+          
+        
+        
+        SubjectDAO dao = new SubjectDAO();
+            List <Subject> temp = dao.getAll();
+        StudentDAO dao2 = new StudentDAO();
+          List <Student> temp2 =dao2.getAll(); 
+            
+          for (int i=0; i<temp.size(); i++)
+              for (int j=0; j<temp2.size(); j++)
+              {
+                 String str1=temp.get(i).getClassId();
+                 String str2=temp2.get(j).getClasses();
+                 
+                 if (str1.equals(str2))
+                 {
+                     String ClassFromSubject =  temp2.get(j).getClasses()+"-"+temp.get(i).getSubjectId();
+                     System.out.println(ClassFromSubject);
+                     
+                     // Classes(String studentId, String fullname, String gender, String cardId, String subjectId)
+                      
+                      String studentId=temp2.get(j).getStudentId();
+                      String fullname = temp2.get(j).getFullname();
+                      String gender =temp2.get(j).getGender();
+                      String cardId = temp2.get(j).getIdcard();
+                      String subjectId = ClassFromSubject;
+                      Classes item = new Classes(studentId,fullname,gender,cardId,subjectId );
+                     
+                      super.add(item);
+                 }
+                 
+                              
+               }
+                  
         return true;
     }
     
     
+    public void CreatClassFromStudentSubject()
+    {
+       
+          
+               
+                  
+     }
+    
     @Override
     public List<Classes> filter(String filter) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
    
        List<Classes> list = super.getAll("Classes");
         List<Classes> result = new ArrayList();

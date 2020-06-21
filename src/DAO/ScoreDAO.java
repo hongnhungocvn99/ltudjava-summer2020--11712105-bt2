@@ -154,6 +154,7 @@ public class ScoreDAO extends AbstractDAO<Score>{
     }
 
     public List<String> getClasses() {
+        
         List<Score> list = super.getAll("Score");
         Collections.sort(list, new SortBySubject());
         Set<String> set = new HashSet<>();
