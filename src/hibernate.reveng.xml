@@ -44,4 +44,5 @@ Contributor(s):
   <table-filter match-name="score"/>
   <table-filter match-name="subject"/>
   <table-filter match-name="timetable"/>
+  
 </hibernate-reverse-engineering>

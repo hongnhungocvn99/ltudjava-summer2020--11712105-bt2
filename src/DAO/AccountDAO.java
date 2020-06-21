@@ -9,6 +9,7 @@ package DAO;
 
 import Code.NewHibernateUtil;
 import Model.Account;
+import Model.Classes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,14 +23,18 @@ public abstract class AccountDAO extends AbstractDAO<Account> {
     public List<Account> getAll(){
         return super.getAll("Account");
     }
+  
     @Override
     public Boolean importFromFile(String filename) {
+      
+        
         return false;
     }
 
     @Override
     public List<Account> filter(String filter) {
         List<Account> list = super.getAll("Account");
+        
         List<Account> result = new ArrayList();
         Stream<Account> stream = list.stream().filter((Account item) -> {
             if (item == null){

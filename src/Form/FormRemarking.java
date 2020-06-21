@@ -5,7 +5,7 @@
  */
 package Form;
 
-import JavaForm.*;
+
 import DAO.RemarkDAO;
 import DAO.RemarkIDDAO;
 import DAO.ScoreDAO;

@@ -7,6 +7,7 @@ package DAO;
 
 
 import Code.CSVReader;
+import Model.Account;
 import Model.Student;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -40,8 +41,10 @@ public class StudentDAO extends AbstractDAO<Student> {
      public List<Student> getAll() {
         return super.getAll("Student");
     }
-
-    
+     
+     
+   
+     
     @Override
     public Boolean importFromFile(String filename) {
      //   throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -58,18 +61,28 @@ public class StudentDAO extends AbstractDAO<Student> {
             return false;
         }
         
+       
+         
          for (int i = 0; i < records.size(); i++) {
             List<String> metaData = records.get(i);
             String studentID = metaData.get(1);
             String fullName = metaData.get(2);
             String gender = metaData.get(3);
             String idCard = metaData.get(4);
-            Student item = new Student(studentID, fullName, gender, idCard, className);
             
-            super.add(item);
-        }
+            Student item = new Student(studentID, fullName, gender, idCard, className);
+             super.add(item);
+           
+        AccountDAO dao = new AccountDAO() {};
+        Account item_acc = new  Account(studentID,studentID,1);
+        dao.add(item_acc);
+        
+       
+           
+            
+      }
          
-
+         
         return true;
               
       }
