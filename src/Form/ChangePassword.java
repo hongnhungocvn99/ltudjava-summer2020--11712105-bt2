@@ -47,7 +47,7 @@ public class ChangePassword extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jlabel_Username1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jlabel_Username1.setText("Permission  ");
+        jlabel_Username1.setText("Phân quyền");
         jlabel_Username1.setToolTipText("");
 
         cmbPermit.setEditable(true);
@@ -60,7 +60,7 @@ public class ChangePassword extends javax.swing.JFrame {
         });
 
         jlabel_Username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jlabel_Username.setText("Username");
+        jlabel_Username.setText("Tên đăng nhập ");
         jlabel_Username.setToolTipText("");
 
         txtUsername.setFocusCycleRoot(true);
@@ -69,19 +69,19 @@ public class ChangePassword extends javax.swing.JFrame {
         jlabel_Password2.setToolTipText("");
 
         jlabel_Password3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jlabel_Password3.setText("Current Password");
+        jlabel_Password3.setText("Mật khẩu cũ");
         jlabel_Password3.setToolTipText("");
 
         txtCurrent.setToolTipText("");
 
         jlabel_Password1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jlabel_Password1.setText("New Password");
+        jlabel_Password1.setText("Mật khẩu mới");
         jlabel_Password1.setToolTipText("");
 
         txtPassword1.setToolTipText("");
 
         jlabel_Password.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jlabel_Password.setText("Enter the password again");
+        jlabel_Password.setText("Nhập lại mật khẩu");
         jlabel_Password.setToolTipText("");
 
         txtPassword2.setToolTipText("");

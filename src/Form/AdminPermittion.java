@@ -82,11 +82,11 @@ public class AdminPermittion extends javax.swing.JFrame {
         frmDesktop.setLayout(frmDesktopLayout);
         frmDesktopLayout.setHorizontalGroup(
             frmDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1200, Short.MAX_VALUE)
+            .addGap(0, 1095, Short.MAX_VALUE)
         );
         frmDesktopLayout.setVerticalGroup(
             frmDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 779, Short.MAX_VALUE)
+            .addGap(0, 681, Short.MAX_VALUE)
         );
 
         menuHome.setText("Trang chủ");

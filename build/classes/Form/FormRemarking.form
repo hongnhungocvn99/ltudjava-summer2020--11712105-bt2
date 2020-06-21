@@ -61,17 +61,22 @@
                               <Component id="jlabel_Password" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="jlabel_Password4" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="cmbColumn" alignment="0" pref="237" max="32767" attributes="0"/>
-                                  <Component id="cmbMark" max="32767" attributes="0"/>
-                                  <Component id="jButton1" alignment="0" min="-2" pref="181" max="-2" attributes="0"/>
-                                  <Component id="txtStdID" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="cmbSubject" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtFullname" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="cmbColumn" alignment="0" pref="237" max="32767" attributes="0"/>
+                                      <Component id="cmbMark" max="32767" attributes="0"/>
+                                      <Component id="jButton1" alignment="0" min="-2" pref="181" max="-2" attributes="0"/>
+                                      <Component id="txtStdID" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="cmbSubject" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtFullname" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <Component id="jScrollPane1" alignment="1" min="-2" pref="238" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" min="-2" pref="238" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
@@ -120,7 +125,7 @@
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jlabel_Password4" min="-2" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="104" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="74" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jButton1" min="-2" pref="48" max="-2" attributes="0"/>

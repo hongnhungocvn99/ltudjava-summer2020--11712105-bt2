@@ -44,14 +44,14 @@ public class FormScore extends javax.swing.JInternalFrame {
         jLabel4 = new javax.swing.JLabel();
         soRot_2 = new javax.swing.JLabel();
         soRot_1 = new javax.swing.JLabel();
-        soDau_1 = new javax.swing.JLabel();
-        soDau_2 = new javax.swing.JLabel();
         btnUpdate = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tableData = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        soDau_1 = new javax.swing.JLabel();
+        soDau_2 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(600, 500));
         addInternalFrameListener(new javax.swing.event.InternalFrameListener() {
@@ -106,39 +106,23 @@ public class FormScore extends javax.swing.JInternalFrame {
         soRot_1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         soRot_1.setText("10");
 
-        soDau_1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        soDau_1.setText("10");
-
-        soDau_2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        soDau_2.setText("10");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(69, 69, 69)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(soDau_1)
-                        .addGap(80, 80, 80)
-                        .addComponent(soDau_2))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(49, 49, 49)
-                        .addComponent(soRot_1)
-                        .addGap(84, 84, 84)
-                        .addComponent(soRot_2)))
+                .addComponent(jLabel4)
+                .addGap(49, 49, 49)
+                .addComponent(soRot_1)
+                .addGap(84, 84, 84)
+                .addComponent(soRot_2)
                 .addContainerGap(191, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(soDau_1)
-                    .addComponent(soDau_2))
-                .addGap(325, 325, 325)
+                .addGap(353, 353, 353)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -177,6 +161,12 @@ public class FormScore extends javax.swing.JInternalFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Phần trăm");
 
+        soDau_1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        soDau_1.setText("10");
+
+        soDau_2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        soDau_2.setText("10");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -197,17 +187,21 @@ public class FormScore extends javax.swing.JInternalFrame {
                                         .addComponent(cmbResult, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(48, 48, 48)
                                         .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel2)))))
+                                    .addComponent(jLabel2)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(36, 36, 36)
+                                .addComponent(jLabel6)
+                                .addGap(38, 38, 38)
+                                .addComponent(jLabel7))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel3)
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel6)
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel7)))
+                        .addGap(109, 109, 109)
+                        .addComponent(soDau_1)
+                        .addGap(84, 84, 84)
+                        .addComponent(soDau_2)))
                 .addContainerGap(287, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -224,12 +218,16 @@ public class FormScore extends javax.swing.JInternalFrame {
                     .addComponent(cmbResult, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(135, 135, 135)
+                .addGap(84, 84, 84)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(soDau_1)
+                    .addComponent(soDau_2))
+                .addGap(22, 22, 22)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
